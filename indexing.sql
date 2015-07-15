@@ -13,3 +13,7 @@ CREATE DATABASE indexed_cars OWNER indexed_cars_user ENCODING 'utf8';
 \i ~/Devleague/Automotive-Index/scripts/car_model_data.sql
 \i ~/Devleague/Automotive-Index/scripts/car_model_data.sql
 
+--Turns timing on
+\timing;
+
+SELECT DISTINCT model_title COUNT FROM car_models WHERE make_code = 'LAM';
